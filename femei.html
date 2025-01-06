@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers Ro | FEMEI</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="stylefooter.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="loading.js" defer></script>
+    <script src="snro.js" defer></script>
+    <script src="filter.js" defer></script>
+  </head>
+
+  <body>
+    <div id="loading-screen">
+      <div class="spinner"></div>
+    </div>
+    <div class="overlay"></div>
+    <div class="mobile-menu">
+      <button class="close-menu">✕</button>
+      <ul>
+        <li><a href="sneakersro.html">ACASĂ</a></li>
+        <li><a href="barbati.html">BARBAȚI</a></li>
+        <li><a href="femei.html">FEMEI</a></li>
+        <li><a href="copii.html">COPII</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="autentificare.html">AUTENTIFICARE</a></li>
+      </ul>
+    </div>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <a href="sneakersro.html" class="logoa">
+            <div class="logo">
+              <h1>SneakersRo</h1>
+              <img src="imagini/shoe-svgrepo-com.svg" class="logo-icon" alt="logo">
+            </div>
+          </a>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="sneakersro.html">ACASĂ</a></li>
+            <li><a href="barbati.html">BARBAȚI</a></li>
+            <li><a href="femei.html">FEMEI</a></li>
+            <li><a href="copii.html">COPII</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li class="inreg"><a href="autentificare.html">AUTENTIFICARE</a></li>
+            </ul>
+          </nav>
+          <a href="cos.html"><img src="imagini/cart.png" width="30" height="30" alt=""></a>
+          <img src="imagini/menu.png" class="menu-icon" alt="">
+          <a href="autentificare.html" class="signup">Înregistrare/ Autentificare</a>
+        </div>
+      </div>
+      <div class="mobile-search-container">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" placeholder="Caută produse...">
+      </div>
+      <div class="small-container">
+        <h1 class="title">Produse recomandate</h1>
+        <div class="filter-button-container">
+          <button id="filterButton">
+            <h2 class="filterButton">Filtre</h2>
+          </button>
+        </div>
+
+        <div id="filterOptions" class="filter-container">
+          <button onclick="sortProducts('price', 'asc')">Pret Crescator</button>
+          <button onclick="sortProducts('price', 'desc')">Pret Descrescator</button>
+          <select id="brandFilter" onchange="filterProducts('brand')">
+            <option value="">Selecteaza Brand</option>
+            <option value="nike">Nike</option>
+            <option value="adidas">Adidas</option>
+          
+          </select>
+          <select id="colorFilter" onchange="filterProducts('color')">
+            <option value="">Selecteaza Culoare</option>
+            <option value="red">Rosu</option>
+            <option value="blue">Albastru</option>
+            <option value="pink">Roz</option>
+          
+          </select>
+          
+  
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <div class="produs" data-price="619" data-brand="nike" data-color="pink">
+              <img src="imagini/af1w.png" alt="">
+            </div>
+            <div class="titluprod">
+              <h4>Nike W Air Force 1</h4>
+              <h5>Fontanka</h5>
+              <br>              
+            </div>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <p>619 RON</p>
+          </div>
+          <div class="col-4">
+            <div class="produs" data-price="799" data-brand="nike" data-color="blue">
+              <img src="imagini/dunkw.png" alt="">
+            </div>
+            <div class="titluprod">
+              <h4>Nike Dunk W Low</h4>
+              <h5>Light Bone/ Metallic Silver-Black</h5>
+            </div>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <p>799 RON</p>
+          </div>
+          <div class="col-4">
+            <div class="produs" data-price="999" data-brand="nike" data-color="pink">
+              <img src="imagini/af1roz.png" alt="">
+            </div>
+            <div class="titluprod">
+              <h4>Nike W Air Force 1</h4>
+              <h5>Desert Berry/ Black-Burgundy</h5>
+            </div>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <p>999 RON</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>companie</h4>
+            <ul>
+              <li><a href="#">despre noi</a></li>
+              <li><a href="#">seviciile noastre</a></li>
+              <li><a href="#">Politica de confidențialitate</a></li>
+              <li><a href="#">Program de afiliere</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>ajutor</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">transport</a></li>
+              <li><a href="#">politica de returnare</a></li>
+              <li><a href="#">starea comenzii</a></li>
+              <li><a href="#">optiuni de plata</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>social media</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              
+              <a href="https://www.instagram.com/andreii.luca_/"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
