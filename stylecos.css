@@ -3,6 +3,9 @@
     justify-content: center;
     margin-bottom: 20px;
 }
+.cosulTau {
+   color: rgb(212, 204, 191);
+}
 
 table {
     width: 80%; 
@@ -15,15 +18,16 @@ table {
 th {
     text-align: left;
     padding: 10px;
-    background: #23242a;
-    color: rgb(212, 204, 191);
+    background: rgb(212, 204, 191);
+    color: #23242a;
     font-weight: 600;
 }
 
 
 td {
     padding: 20px;
-    border-bottom: 1px solid #23242a;
+    border-bottom: 1px solid rgb(212, 204, 191);
+    color: rgb(212, 204, 191);
     
 }
 
@@ -35,7 +39,7 @@ td img {
     border-radius: 5px;
 }
 .numeProdCos{
-    color: #23242a;
+    color: rgb(212, 204, 191);
     font-weight: 600;
 }
 
@@ -53,7 +57,7 @@ td img {
 
 .remove-btn {
 
-    background: #f11a1a;
+    background: #970505;
     color: #fff;
     padding: 5px 10px;
     border: none;
@@ -75,7 +79,7 @@ td img {
 }
 
 .total-price table {
-    border-top: 3px solid #23242a;
+    border-top: 3px solid rgb(212, 204, 191);
     width: auto;
 }
 
@@ -87,19 +91,21 @@ td img {
 .total-price h3 {
     margin-right: 20px;
     font-size: 24px;
-    color: #23242a;
+    color: rgb(212, 204, 191);
 }
 
 
 button {
-    background: #23242a;
-    color: rgb(212, 204, 191);
-    padding: 10px 20px;
+    background: rgb(212, 204, 191);
+    color: #23242a;
+    padding: 15px 30px;
     border: none;
     border-radius: 100px;
     cursor: pointer;
     transition: background 0.3s;
-    
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 button:hover {
@@ -111,7 +117,7 @@ button:hover {
     padding-bottom: 50px;
     position: relative;
     line-height: 60px;
-    color: #23242a;
+    color: rgb(212, 204, 191);
 }
 @media only screen and (max-width: 600px) {
     th{
