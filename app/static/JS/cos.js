@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (cart.length === 0) {
             const row = document.createElement('tr');
             row.innerHTML = `
-            <td colspan="4" style="text-align: center; color: #23242a;"><strong>Cosul tau este gol!</strong></td>
+            <td colspan="4" style="text-align: center; color: rgb(212, 204, 191);"><strong>Cosul tau este gol!</strong></td>
             `;
             cartItemsContainer.appendChild(row);
         } else {

@@ -4,8 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Sneakers Ro | Sign Up/ Log in</title>
-	<link rel="stylesheet" href="styleautentif.css">
-	<script src="snro.js" defer></script>
+	<link rel="stylesheet" href="../static/css/styleautentif.css">
+	<script src="../static/js/loading.js" defer></script>
+    <script src="../static/js/snro.js" defer></script>
+    <script src="../static/js/filter.js" defer></script>
 </head>
 <body>
 	<div id="loading-screen">
@@ -25,22 +27,23 @@
 		<div class="right">
 			<div class="box">
 				<form autocomplete="off">
-					<h2>Autentificare</h2>
+					<h2>Contactează-ne</h2>
+					<div class="inputBox">
+						<input type="text" required="required">
+						<span>Nume</span>
+						<i></i>
+					</div>
 					<div class="inputBox">
 						<input type="text" required="required">
 						<span>Email</span>
 						<i></i>
 					</div>
 					<div class="inputBox">
-						<input type="password" required="required">
-						<span>Parola</span>
+						<input type="text" required="required">
+						<span>Mesaj</span>
 						<i></i>
 					</div>
-					<div class="links">
-						<a href="#">Ați uitat parola?</a>
-						<a href="inregistrare.html">Înregistrare</a>
-					</div>
-					<input type="submit" value="Autentificare">
+					<input type="submit" value="Trimite">
 				</form>
 			</div>
 		</div>
