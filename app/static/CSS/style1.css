@@ -1183,9 +1183,15 @@ a[href="cos.html"] {
     }
 }
 
-/* Add this new section */
 .incaltamintea {
-    display: inline;
+    display: flex;
+    position: relative;
+    background: #2490CF;
+    background: linear-gradient(to right, #2490CF 0%, #5814CF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px; 
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 420px) {
